@@ -7,13 +7,13 @@
 
 ## Team Members
 
-<< List team member names >>
+Alex Santana
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+Create a 2D aracade game combining Lunar Landing, Asteroids, and sci-fi aspects like radar, space pirates, and fetch quests for an intresting game
 
 ***    
 
@@ -31,11 +31,14 @@
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Start menu
+2. Dynamic (can move,shoot and interact) character
+3. Obstacle collisions
+4. Scrolling Background
+5. Radar of potential threats
+6. Dynamic (move and shoot) Enimes
+7. Game over screen
+8. Pause screen
 
 ### Classes
 
