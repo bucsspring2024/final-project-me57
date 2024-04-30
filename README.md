@@ -45,7 +45,25 @@ Create a 2D aracade game combining Lunar Landing, Asteroids, and sci-fi aspects 
 - << You should have a list of each of your classes with a description >>
 
 ## ATP
+Actual
+| Step     |Procedure                                       |Expected Results                                               |
+|----------|:----------------------------------------------:|--------------------------------------------------------------:|
+|  1       | Run Program                                    | GUI window appears with background, starting at the main menu |
+|  2       | Player clicks start or space bar               | GUI transitions to gameplay, starting the game                |
+|  3       | Player presses either uparrow or w             | Player ship moveward, in its current direction                |
+|  4       | Player presses either left arrow or a          | Player ship rotates counterclockwise                          |
+|  5       | Player presses either right arrow or d         | Player ship rotates clockwise                                 |
+|  6       | Player presses spacebar                        | Player ship shoots a laser beam                               |
+|  7       | Player's ship collides into foreing objects    | Player ship explodes                                          |
+|  8       | Player presses spacebar                        | Player ship shoots a laser beam                               |
+|  9       | Enemy spaceship collides into foreign object   | Enemy ship explodes                                           |
+|  10      | Asteriod collides into foreign object          | Foreign object explodes                                       |
+|  11      | Player presses p                               | Game pauses                                                   |
+|  12      | Laser beam collides into asteriod              | Asteriod breaks into smaller rocks                            |
+|  13      | Player ship is destroyed                       | Player lives reduce by 1                                      |
+|  14      | Player lives go into the negative              | Game ends, totaling the amount of time player has been alived for|
 
+Sample
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Run Counter Program  |GUI window appears with count = 0  |
