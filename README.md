@@ -42,6 +42,8 @@ New is just Asteroids, as previos was too complicated to integrate constant grav
 8. Pause screen
 
 Actual
+1. Dynamic (can move,shoot and interact) character
+2. Obstacle collisions
 ### Classes
 
 - << You should have a list of each of your classes with a description >>

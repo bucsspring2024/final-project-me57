@@ -1,5 +1,7 @@
 import DynamicObject
 import Beam
+from pygame.math import Vector2
+from pygmae.transform import rotozoom
 
 class Ship(DynamicObject):
     MANEUVERABILITY=3
