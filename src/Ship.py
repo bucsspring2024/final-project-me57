@@ -1,33 +1,27 @@
-class Ship:
-    def __init__(self,x,y,velocity,direction,rotate,img_file):
-        """
-        Initializes ship object
-        args"
-            -x=int-current x position
-            -y=int-current y position
-            -velocity=int-magnitude of velocity,change in x,y position
-            -direction=int-where is the front of the ship facing
-            -rotate=int-change in direction
-        """
-        self.position=x,y
-        self.img_file=img_file
-        self.velocity=velocity
-        self.direction=direction
-        self.rotate=rotate
+import DynamicObject
+import Beam
 
-    def move_foward(self):
-        """
-        Updates current position
-        """
-        self.position+=self.velocity
-    def rotate(self):
-        """
-        Updates current direction
-        """
-        self.direction+=self.rotate
-    def shoot(self,shoot="Flase"):
-        """
-        Shoots a projectile
-        """
-        if shoot == True:
-            return Beam#Need to create a projectile from ship's coord/direction
+class Ship(DynamicObject):
+    MANEUVERABILITY=3
+    ACCERLATION=.5
+    BEAM_SPEED=10
+    def rotate(self,clockwise=True):
+        sign=1 if clockwise else -1
+        angle=self.MANEUVERABILITY * sign
+        self.direction.rotate_ip(angle)
+
+    def accelerate(self):
+        self.velocity+=self.direction*self.ACCELERATION
+    
+    def draw(self,surface):
+        angle=self.direction.angle_to(UP)
+        rotated_surface = rotozoom(self.sprite, angle, 1.0)
+        rotated_surface_size = Vector2(rotated_surface.get_size())
+        blit_position = self.position - rotated_surface_size * 0.5
+        surface.blit(rotated_surface, blit_position)
+
+
+    def shoot(self):
+        beam_velocity=self.direction
+        beam=Beam(self.position,beam_velocity)
+        self.create_beam_callback(beam)

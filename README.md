@@ -15,6 +15,7 @@ Alex Santana
 
 Create a 2D aracade game combining Lunar Landing, Asteroids, and sci-fi aspects like radar, space pirates, and fetch quests for an intresting game
 
+New is just Asteroids, as previos was too complicated to integrate constant gravity, additional enemy ships to track and hunt you down, and moving from long distances in game was complicated
 ***    
 
 ## GUI Design
@@ -40,6 +41,7 @@ Create a 2D aracade game combining Lunar Landing, Asteroids, and sci-fi aspects 
 7. Game over screen
 8. Pause screen
 
+Actual
 ### Classes
 
 - << You should have a list of each of your classes with a description >>
